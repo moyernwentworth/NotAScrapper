@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="497.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scraping.BasicFXMLController">
+   <children>
+      <Pane prefHeight="497.0" prefWidth="707.0">
+         <children>
+            <Rectangle fill="#c44343" height="56.0" layoutX="47.0" layoutY="-9.0" smooth="false" stroke="#c24444" strokeType="INSIDE" width="662.0" />
+            <Rectangle fill="#000000d4" height="452.0" layoutX="47.0" layoutY="47.0" smooth="false" stroke="#172bb0db" strokeType="INSIDE" width="662.0" />
+            <Rectangle fill="SILVER" height="504.0" layoutX="-5.0" layoutY="-6.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="59.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="-27.0" layoutY="323.0" stroke="WHITE" strokeType="INSIDE" width="71.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="-27.0" layoutY="239.0" stroke="WHITE" strokeType="INSIDE" width="71.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="-27.0" layoutY="147.0" stroke="WHITE" strokeType="INSIDE" width="71.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="47.0" layoutX="-27.0" layoutY="64.0" stroke="WHITE" strokeType="INSIDE" width="71.0" />
+            <ImageView fx:id="home" fitHeight="42.0" fitWidth="37.0" layoutX="1.0" layoutY="69.0" onMouseClicked="#handleHome" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../../../../Pictures/Saved%20Pictures/home.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="done" fitHeight="56.0" fitWidth="37.0" layoutX="1.0" layoutY="328.0" onMouseClicked="#handleDone" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../../../../Pictures/Saved%20Pictures/history.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="todo" fitHeight="31.0" fitWidth="37.0" layoutX="4.0" layoutY="247.0" onMouseClicked="#handleToDo" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../../../../Pictures/Saved%20Pictures/timer.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="settings" fitHeight="34.0" fitWidth="37.0" layoutX="1.0" layoutY="155.0" onMouseClicked="#handleSettings" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../../../../Pictures/Saved%20Pictures/settings.PNG" />
+               </image>
+            </ImageView>
+            <Text layoutX="123.0" layoutY="42.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="S C R A P E R">
+               <font>
+                  <Font name="Bauhaus 93" size="57.0" />
+               </font>
+            </Text>
+            <TextField fx:id="catagory" layoutX="270.0" layoutY="64.0" />
+            <TextField fx:id="size" layoutX="270.0" layoutY="142.0" />
+            <TextField fx:id="keyword" layoutX="270.0" layoutY="182.0" />
+            <TextField fx:id="date" layoutX="270.0" layoutY="246.0" />
+            <TextField fx:id="color" layoutX="270.0" layoutY="286.0" />
+            <Text fill="WHITE" layoutX="123.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catagory:">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="123.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size:">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="123.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keywords:">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="123.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checkout Timer:">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="123.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color:">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="submit" layoutX="193.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#handleSubmit" prefHeight="39.0" prefWidth="140.0" text="Create">
+               <font>
+                  <Font name="Bodoni MT" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
